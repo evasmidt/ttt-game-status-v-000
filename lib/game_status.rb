@@ -65,13 +65,6 @@ end
 def winner(board)
   won?(board)
 
-    #if board[win_index_1] == "X"
-    #  return "X"
-    #elsif board[win_index_1] == "O"
-      #return "O"
-
-  #you have to redo the won? logic of finding the winning_combination
-
   WIN_COMBINATIONS.detect do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
